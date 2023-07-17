@@ -2,9 +2,12 @@
 import {defineComponent} from "vue";
 import {AvatarProps} from "./avatar.ts";
 
+let props: AvatarProps = {
+  size: "small"
+}
 defineComponent({
   name: 'Avatar',
-  props: AvatarProps
+  // props: props
 })
 </script>
 
