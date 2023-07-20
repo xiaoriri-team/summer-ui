@@ -1,8 +1,9 @@
-export interface BadgeProps {
+import {TypeStyle} from "../../constants/TypeStyle.ts";
+
+export interface BadgeProps extends TypeStyle {
     value: string | number,
     max?: number,
     hidden?: boolean,
-    type?: 'default' | 'primary' | 'success' | 'warning' | 'danger' | 'info'
 }
 
 
